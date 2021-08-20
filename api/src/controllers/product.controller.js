@@ -22,18 +22,29 @@ exports.createProduct = async (req, res) => {
     });
 };
 
-exports.listAllProducts = async (req, res) => {
+exports.listPackages = async (req, res) => {
   const response = await db.query(`
     SELECT 
       *
     FROM
-      packages 
-    ORDER BY
-      name ASC
+      vw_packages_information
   `);
   
   res.status(200).send(response.rows);
 };
+
+// exports.listAllProducts = async (req, res) => {
+//   const response = await db.query(`
+//     SELECT 
+//       *
+//     FROM
+//       packages 
+//     ORDER BY
+//       name ASC
+//   `);
+  
+//   res.status(200).send(response.rows);
+// };
 
 
 exports.findProductById = async (req,res) => {
@@ -73,3 +84,4 @@ exports.updateProductById = async (req, res) => {
 
   res.status(200).send({ message: "Product Updated Successfully!" });
 };
+
