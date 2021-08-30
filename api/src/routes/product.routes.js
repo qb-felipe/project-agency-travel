@@ -10,7 +10,6 @@ router.get('/products', productController.listPackages);
 
 router.get('/products/:id', productController.findProductById);
 
-
 router.put('/products/:id', productController.updateProductById);
 
 
