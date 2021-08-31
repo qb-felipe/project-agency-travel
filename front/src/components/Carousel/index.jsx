@@ -1,13 +1,24 @@
 import React from 'react';
 
+import Cover from '../../assets/img/cover.jpg';
 
 export default function Carousel(){
     return(
-        <div class="owl-carousel owl-theme">
-            <div class="item"><h4>1</h4></div>
-            <div class="item"><h4>2</h4></div>
-            <div class="item"><h4>3</h4></div>
-            <div class="item"><h4>4</h4></div>
+        <div className="owl-carousel owl-theme">
+            
+            <div className="item">
+                <img src={Cover} alt="" />
+            </div>
+            <div className="item">
+                <img src={Cover} alt="" />
+            </div>
+            <div className="item">
+                <img src={Cover} alt="" />
+            </div>
+            <div className="item">
+                <img src={Cover} alt="" />
+            </div>
+
             <div class="item"><h4>5</h4></div>
             <div class="item"><h4>6</h4></div>
             <div class="item"><h4>7</h4></div>

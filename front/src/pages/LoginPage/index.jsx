@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import Login from '../../components/Login';
 import './style.css';
 
@@ -7,7 +8,9 @@ import './style.css';
 function LoginPage(){
 
     return(
-        <Login />
+        <>
+            <Login />
+        </>
     )
 }
 

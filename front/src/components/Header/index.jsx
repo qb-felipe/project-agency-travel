@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 function Header(){
     return(
-        <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <header class="navbar navbar-expand-lg navbar-light bg-light">
             <Link class="navbar-brand" to="/">
                 Via JÁ
             </Link>
@@ -27,7 +27,7 @@ function Header(){
                     </li>
                 </ul>
             </div>
-        </div>
+        </header>
     )
 };
 

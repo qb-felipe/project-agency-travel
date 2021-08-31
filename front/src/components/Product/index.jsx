@@ -11,16 +11,28 @@ export default function Product(){
         const data = await response.json();
 
         setProducts(data);
-    },
-    []);
+    },[]);
 
     return(
         <>
-            <ul>
-                {products.map( prod =>(
-                    <li key={prod.id}> {prod.nome} </li>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Hotel</th>
+                    <th>Valor Diária</th>
+                </tr>
+
+                {products.map( prod => (
+                    <tr key={prod.id}>
+                        <td> {prod.nome} </td>
+                        <td> {prod.preco} </td>
+                        <td> {prod.hotel} </td>
+                        <td> {prod.valor_dia} </td>
+                    </tr>
                 ))}
-            </ul>
+                    
+            </table>
         </>
     )
 };

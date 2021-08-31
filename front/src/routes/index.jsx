@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import Home from '../pages/Home';
 import LoginPage from '../pages/LoginPage';
 import Travels from '../pages/Travels';
+import Users from '../pages/Users';
 
 function Router(){
     return(
@@ -13,6 +14,7 @@ function Router(){
                 <Route path="/login" component={LoginPage} />
                 <Route path="/home" component={Home} />
                 <Route path="/travels" component={Travels} />
+                <Route path="/users" component={Users} />
             </Switch>
         </BrowserRouter>  
     );

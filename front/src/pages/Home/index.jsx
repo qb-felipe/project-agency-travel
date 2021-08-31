@@ -5,6 +5,7 @@ import './style.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Text from '../../components/Text';
+import Carousel from '../../components/Carousel';
 
 function Home(){
     return(
@@ -16,6 +17,10 @@ function Home(){
             </section>
             <section className="Text">
                 <Text />
+            </section>
+
+            <section className="carousel">
+                <Carousel />
             </section>
 
             <Footer />
