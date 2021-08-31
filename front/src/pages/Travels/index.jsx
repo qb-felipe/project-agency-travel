@@ -1,6 +1,9 @@
 import React from 'react';
 
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+import Product from '../../components/Product';
 
 function TravelList(){
 
@@ -10,6 +13,13 @@ function TravelList(){
             <h1>
             Essa é a lista de viagens
             </h1>
+
+            <section>
+                <h3> Viagens </h3>
+                <Product />
+            </section>
+
+            <Footer />
         </div>
     )
 }

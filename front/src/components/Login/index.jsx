@@ -1,6 +1,5 @@
 import React from 'react';
 
-import '../../bootstrap/bootstrap.min.css';
 
 function Login (){
 

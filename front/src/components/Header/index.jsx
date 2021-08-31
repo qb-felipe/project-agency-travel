@@ -1,14 +1,12 @@
 import React from 'react';
-import  '../../bootstrap/bootstrap.min.css';
-
 import {Link} from 'react-router-dom';
 
 function Header(){
     return(
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
+        <div class="navbar navbar-expand-lg navbar-light bg-light">
+            <Link class="navbar-brand" to="/">
                 Via JÁ
-            </a>
+            </Link>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
@@ -18,18 +16,18 @@ function Header(){
                         </Link> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <Link to="/travels" class="nav-link" >
                             Pacotes
-                        </a> 
+                        </Link> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <Link class="nav-link" to="/">
                             Quem somos 
-                        </a> 
+                        </Link> 
                     </li>
                 </ul>
             </div>
-        </nav>
+        </div>
     )
 };
 
