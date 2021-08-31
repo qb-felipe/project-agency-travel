@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+header .navbar{
+    position: absolute;
+    margin-top: 0;
+    width: 100%;
+}
