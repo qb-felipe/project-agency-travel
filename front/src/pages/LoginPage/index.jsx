@@ -1,16 +1,16 @@
 import React from 'react';
 
-
 import Login from '../../components/Login';
-import './style.css';
+import { Container } from './style';
+
 
 
 function LoginPage(){
 
     return(
-        <>
+        <Container>
             <Login />
-        </>
+        </Container>
     )
 }
 

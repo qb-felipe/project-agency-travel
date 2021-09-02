@@ -1,5 +1,8 @@
 import React, {useState, useEffect} from 'react';
 
+import { DataTable } from 'primereact/datatable';
+import { Column } from 'primereact/column';
+
 export default function ListUsers(){
 
     const [users, setUsers] = useState([]);
@@ -13,7 +16,17 @@ export default function ListUsers(){
 
     return(
         <>
-            <table>
+            <div className="card">
+                <DataTable value={users}>
+                    <Column field="id" header="Id"></Column>
+                    <Column field="name" header="Nome"></Column>
+                    <Column field="login" header="Login"></Column>
+                    <Column field="address" header="Endereço"></Column>
+                    <Column field="ddd" header="DDD"></Column>
+                    <Column field="phone_number" header="Telefone"></Column>
+                </DataTable>
+            </div>
+            {/* <table>
                 <tr>
                     <th>Nome</th>
                     <th>Login</th>
@@ -30,7 +43,7 @@ export default function ListUsers(){
                     </tr>
                 ))}
                     
-            </table>
+            </table> */}
         </>
     )
 

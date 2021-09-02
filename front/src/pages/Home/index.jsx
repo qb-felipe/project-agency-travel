@@ -12,16 +12,13 @@ function Home(){
         <div>
             <Header />
 
-            <section className="cover">
-                <img id="cover-image" src={cover} alt="Site Cover" />
-            </section>
-            <section className="Text">
-                <Text />
-            </section>
 
-            <section className="carousel">
+                <img id="cover-image" src={cover} alt="Site Cover" />
+
+                <Text />
+
                 <Carousel />
-            </section>
+
 
             <Footer />
         </div>      

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function Login (){
 
     return(
@@ -19,9 +18,15 @@ function Login (){
                     <label for="floatingPassword">Password</label>
                 </div>
 
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">
+                    Sign in   
+                </button>
 
-                <p class="mt-5 mb-3 text-muted">Alpha Lumen | 2021</p>
+                
+                <p class="mt-5 mb-3 text-muted">
+                    <i className="pi pi-globe" style={{'fontSize': '0.8em'}}></i>
+                      Alpha Lumen | 2021
+                </p>
 
             </form>
         </main>
