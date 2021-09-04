@@ -5,7 +5,9 @@ router.get('/hotels', hotelsController.listAllHotels);
 
 router.post('/hotels', hotelsController.addHotel);
 
-router.put('/hotels/:id', hotelsController.changeHotel)
+router.put('/hotels/:id', hotelsController.changeHotel);
+
+// router.post('/voucher', hotelsController.addVoucher);
 
 
 module.exports = router;

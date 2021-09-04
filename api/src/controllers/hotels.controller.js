@@ -55,3 +55,21 @@ exports.changeHotel = async (req, res) => {
     res.status(200).send({ message: `Hotel ${name} had their data changed!` });
 };
 
+
+// exports.addVoucher = async (req, res) => {
+//   const {id_package, id_hotel} = req.body;
+//   const { rows } = await db.query(
+//       `   INSERT INTO 
+//             daily_voucher (id_package, id_hotel)
+//           VALUES
+//               ($1, $2)`,
+//               [id_package, id_hotel]
+//   );
+
+//   res.status(201).send({
+//     message: "Voucher added successfully and Package and hotel linked!",
+//     body: {
+//       product: { id_package, id_hotel }
+//     },
+//   });
+// };

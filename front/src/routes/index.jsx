@@ -6,6 +6,7 @@ import LoginPage from '../pages/LoginPage';
 import Travels from '../pages/Travels';
 import Users from '../pages/Users';
 import Purchase from '../pages/Purchase';
+import Register from '../pages/RegisterPage';
 
 function Router(){
     return(
@@ -17,6 +18,7 @@ function Router(){
                 <Route path="/travels" component={Travels} />
                 <Route path="/users" component={Users} />
                 <Route path="/purchase" component={Purchase} />
+                <Route path="/register" component={Register} />
             </Switch>
         </BrowserRouter>  
     );

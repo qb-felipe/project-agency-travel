@@ -6,18 +6,19 @@
 const db = require('../config/database');
 
 exports.createProduct = async (req, res) => {
-    const {name, description, days, price, city, state} = req.body;
+    const {name, description, days, price, city, state, img_title} = req.body;
     const { rows } = await db.query(
-        `INSERT INTO packages (name,description,days,price,city,state)
+        `INSERT INTO packages (name,description,days,price,city,state,img_title)
         VALUES 
-            ($1, $2, $3, $4, $5, $6)`,
-        [name, description, days, price, city, state]
+            ($1, $2, $3, $4, $5, $6,$7)`,
+        [name, description, days, price, city, state, img_title]
     );
+
   
     res.status(201).send({
       message: "Product added successfully!",
       body: {
-        product: { name, description, days, price, city, state }
+        product: { name, description, days, price, city, state, img_title}
       },
     });
 };
@@ -27,7 +28,7 @@ exports.listPackages = async (req, res) => {
     SELECT 
       *
     FROM
-      vw_packages_information
+      vw_package_info
   `);
   
   res.status(200).send(response.rows);

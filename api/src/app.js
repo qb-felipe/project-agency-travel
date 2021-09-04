@@ -9,6 +9,7 @@ const productRoute = require('./routes/product.routes');
 const userRoute = require('./routes/user.routes');
 const hotelRoute = require('./routes/hotels.routes');
 const ticketRoute = require('./routes/ticket.routes');
+const authenticationRoute = require('./routes/authentication.routes');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -21,5 +22,6 @@ app.use('/api/', productRoute);
 app.use('/api/', userRoute);
 app.use('/api/', hotelRoute);
 app.use('/api/', ticketRoute);
+app.use('/api/', authenticationRoute);
 
 module.exports = app;
