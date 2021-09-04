@@ -12,7 +12,7 @@ function Router(){
     return(
         <BrowserRouter>
             <Switch>
-                <Redirect exact to="/login" from="/" />
+                <Redirect exact to="/home" from="/" />
                 <Route path="/login" component={LoginPage} />
                 <Route path="/home" component={Home} />
                 <Route path="/travels" component={Travels} />

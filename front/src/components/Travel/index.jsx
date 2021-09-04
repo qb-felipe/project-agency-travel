@@ -38,10 +38,13 @@ export default function Travel(){
                         <div className="package-cover">
                             <img className="img-cover" src= {prod.img_title} alt="" />
                         </div>
+                        
+                        <div className="title">
+                            <h3> {prod.name } </h3>
+                        </div>
 
                         <div className="description">
-                        
-                            <h3> {prod.name } </h3>
+                            
                             <p> {prod.description} </p>
 
                             <div className="items-description">

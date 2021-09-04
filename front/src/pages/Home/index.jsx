@@ -1,6 +1,6 @@
 import React from 'react';
 
-import cover from '../../assets/img/cover.jpg';
+import cover from '../../assets/img/cover.png';
 import './style.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';

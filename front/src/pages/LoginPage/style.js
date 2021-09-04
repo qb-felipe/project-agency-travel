@@ -19,4 +19,8 @@ export const Container = styled.div`
     .form-floating{
         padding-bottom: 14px;
     }
+
+    img{
+        margin-bottom: 25px;
+    }
 `;

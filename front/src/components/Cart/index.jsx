@@ -1,17 +1,23 @@
-import React from 'react';
+import React,  {useState, useEffect} from 'react';
+import { useHistory } from 'react-router-dom';
 
+import api from '../../services/api';
 import Logo from '../../assets/logo/logo.svg';
 
 export default function Cart(){
     
-    
-    
-    
-    
-    
-    
-    
-    
+    const history = useHistory();
+    // const [products, setProducts] = useState([]);
+
+    // useEffect( async () => {
+
+    //     api
+    //     .get('/products/id')
+    //     .then((response) => setProducts(response.data))
+    //     .catch((err) => {
+    //         console.error("Ocorreu um erro" + err);
+    //     });
+    // }, []);
     
     return(
 
@@ -35,21 +41,21 @@ export default function Cart(){
                             <ul className="list-group mb-3">
                                 <li className="list-group-item d-flex justify-content-between lh-sm">
                                     <div>
-                                    <h6 className="my-0">Nome do pacote</h6>
-                                    <small className="text-muted">Descrição</small>
+                                    <h6 className="my-0"> Nome do Pacote </h6>
+                                    <small className="text-muted"> Descrição do pacote </small>
                                     </div>
-                                    <span className="text-muted">R$1500</span>
+                                    <span className="text-muted"> R$ 15000 </span>
                                 </li>
                                 <li className="list-group-item d-flex justify-content-between">
                                     <span>Total </span>
-                                    <strong>R$ 1500</strong>
+                                    <strong> R$ 15000 </strong>
                                 </li>
                             </ul>
 
                             <form className="card p-2">
                                 <div className="input-group">
-                                    <input type="text" className="form-control" placeholder="Promo code" />
-                                    <button type="submit" className="btn btn-secondary">Redeem</button>
+                                    <input type="text" className="form-control" placeholder="Cumpom de desconto" />
+                                    <button type="submit" className="btn btn-secondary">Inserir</button>
                                 </div>
                             </form>
                     </div>
@@ -132,7 +138,7 @@ export default function Cart(){
 
                 <hr className="my-4" />
 
-                <button className="w-100 btn btn-primary btn-lg" type="submit">Finalizar Reserva</button>
+                <button className="w-100 btn btn-primary btn-lg" type="submit" onClick={() => history.push('/travels')}>Finalizar Reserva</button>
                 </form>
             </div>
             </div>
