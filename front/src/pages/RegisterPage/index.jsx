@@ -2,20 +2,17 @@ import React from 'react';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Cart from '../../components/Cart';
 
+import Register from '../../components/RegisterForm/';
 
-function TravelList(){
-
+export default function RegisterPage(){
     return(
         <div>
             <Header />
 
-            <Cart />
+                <Register />
 
             <Footer />
         </div>
     )
 }
-
-export default TravelList;

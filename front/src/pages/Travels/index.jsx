@@ -10,13 +10,14 @@ function TravelList(){
     
 
     return(
-        <div>
+        <>
             <Header />
 
-                <Travel />
+            <Travel />
 
             <Footer />
-        </div>
+        </>
+            
     )
 }
 
