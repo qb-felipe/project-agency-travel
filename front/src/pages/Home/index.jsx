@@ -12,12 +12,11 @@ function Home(){
         <div>
             <Header />
 
+            <img id="cover-image" src={cover} alt="Site Cover" />
 
-                <img id="cover-image" src={cover} alt="Site Cover" />
+            <Text />
 
-                <Text />
-
-                <Carousel />
+            <Carousel />
 
 
             <Footer />
